@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <table>
+            <tr><td>username</td><td>Password</td></tr>
+                {% for i in x %}
+                <tr>
+                    <td>{{i.username}}</td><td>
+                        {{i.password}}</td>
+                        <td><a href="dele/{{i.id}}">Delete</a></td>
+                        <td><a href="edit/{{i.id}}">Edit</a></td>
+                    </tr>
+                {% endfor %}
+        </table>
+    </body>
+</html>
