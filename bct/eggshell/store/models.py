@@ -6,4 +6,11 @@ class man(models.Model):
     class Meta:
         db_table="man"
 
+class Admin(models.Model):
+  name=models.CharField(max_length=50);
+  price=models.FloatField()
+  quantity= models.IntegerField()
+  image=models.CharField(max_length=2083)
+  class Meta:
+    db_table="Admin"
     
