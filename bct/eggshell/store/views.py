@@ -63,3 +63,7 @@ def dele(request,id):
     d=man.objects.get(id=id)
     d.delete()
     return redirect("../show")
+
+def newhome(request):
+    return render(request,'newhome.html')
+    

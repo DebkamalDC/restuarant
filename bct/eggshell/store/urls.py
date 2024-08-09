@@ -29,5 +29,7 @@ urlpatterns = [
     
     path('show',views.show),
     
-    path('del/<int:id>',views.dele)
+    path('del/<int:id>',views.dele),
+
+    path('newhome',views.newhome),
 ]
